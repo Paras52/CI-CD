@@ -7,7 +7,7 @@ on:
 
 jobs:
   dev:
-    name: Dev 
+    name: app.py 
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout code
@@ -22,7 +22,7 @@ jobs:
         run: python dev.py
 
   test:
-    name: Test 
+    name: app1.py 
     runs-on: ubuntu-22.04
     needs: dev
     steps:
@@ -38,7 +38,7 @@ jobs:
         run: python test.py
 
   prod:
-    name: Prod 
+    name: app2.py
     runs-on: ubuntu-22.04
     needs: test
     steps:
