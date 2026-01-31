@@ -51,4 +51,4 @@ jobs:
           python-version: '3.12'
 
       - name: Run prod script
-        run: python prod.py
+        run: python app2.py
