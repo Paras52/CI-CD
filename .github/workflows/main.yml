@@ -19,7 +19,7 @@ jobs:
           python-version: '3.12'
 
       - name: Run dev script
-        run: python dev.py
+        run: python app.py
 
   test:
     name: app1.py 
@@ -35,7 +35,7 @@ jobs:
           python-version: '3.12'
 
       - name: Run test script
-        run: python test.py
+        run: python app1.py
 
   prod:
     name: app2.py
